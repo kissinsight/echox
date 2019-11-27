@@ -167,6 +167,8 @@ a custom validator using `Echo#Validator` and leverage third-party [libraries](h
 Example below uses https://github.com/go-playground/validator framework for validation:
 
 ```go
+var validate *validator.Validate
+
 type (
 	User struct {
 		Name  string `json:"name" validate:"required"`
